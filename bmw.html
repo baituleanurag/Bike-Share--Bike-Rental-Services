@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sport Bikes</title>
+    <style>
+      /* anurag code */
+*{
+    margin:0;
+    padding:0;
+}
+.navabar{
+    background-color: #001f3e;
+}
+.navabarList{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    margin:0 auto;
+}
+ul .dropdown{
+    display:block;
+}
+img{
+    height: 65px;
+}
+.navabarList li p,a{
+    text-decoration: none;
+    padding:0 0 0 20px;
+    color:white;
+}
+.navabarList li i{
+    color:white;
+}
+.navabarList li input{
+    padding:5px;
+}
+.home{
+    padding-left: 112px;
+}
+.login{
+    margin-left: 251px;
+}
+.login button{
+    background-color: #001f3e;
+    color:white;
+    padding:10px;
+    border:1px solid white;
+    border-radius:10px;
+}
+ /* anurag code end*/
+
+
+
+      section{
+          display: flex;
+          justify-content: space-between;
+          gap: 35px;
+          margin: 50px;       
+      }
+      section h1{
+             font-size: 43px;
+             margin: 0;
+       }
+      
+      section img {       border: 1px solid black ;
+                 height: 383px;
+                 width: 470px ;
+                 background: rgb(100, 70, 70);
+               box-shadow: 12px 7px 9px #7d98a0;}
+      
+             section img :hover{
+                   box-shadow:    12px 7px 9px red  ;
+                 
+                                
+              }
+                 
+      section button { height: 35px;
+               margin-top: 32px;
+               border-radius: 20px;
+               padding:8px 15px;
+             }
+      
+      section button:hover{ 
+        background-color: rgb(17, 205, 18);    
+        color:white;        
+      }
+      .nam{
+          margin-bottom: -16px;
+      }
+      
+      </style>
+</head>
+<body>
+  <!-- anurag code start -->
+  <header>
+    <div class="navabar">
+        <ul class="navabarList">
+            <li>
+                <img src="bullet-removebg-preview.png" alt="logo" class="logo">
+            </li>
+            <li>
+                <p>BikeShare : Bike Rental Service</p>
+            </li>
+            <li>
+                <a href="index.html" class="home">HOME</a>
+            </li>
+            <li>
+                <a href="#">CATEGORIES</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+            
+            <li>
+                <a href="#">BRAND</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+            <li><a href="#">ABOUT</a>
+            </li>
+            <li>
+            <a href="#">
+                <input type="text" placeholder="Search" id="search">
+            </a>
+            </li>
+            <li>
+                <i class="fa-solid fa-magnifying-glass" for="search"></i>
+            </li>
+            <li class="login">
+               <button>LOGIN</button>
+            </li>
+        </ul>
+    </div>
+</header>
+ <!-- anurag code end -->
+       <section class="sec-1">
+                
+                <img src="bmw.png" alt="image not found"  >                    
+                <div class="info-1">
+                             <h1>BMW R 1250 GS</h1>
+                             <hr>
+                             <p class="nam"> <small>Brand: BMW</small> <br>                        
+                              <small>Adventure Bike</small> 
+                             </p> 
+                             <br>
+                            <b>₹ 2500<br>
+                              Available Unit :</b> <span>10</span> <br>
+                        
+                              <button>Book this bike</button>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ab labore quod architecto voluptatem illum! Aut omnis natus perspiciatis, quo ad voluptatibus minus inventore consectetur suscipit ratione fugiat dolores Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aperiam temporibus odio .</p>
+                              <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis facere iste assumenda, iure nostrum minima ut, voluptatibus eaque doloribus quidem optio sequi nulla soluta veniam? </p>      
+                </div>
+                 
+        </section>
+</body>
+</html>
