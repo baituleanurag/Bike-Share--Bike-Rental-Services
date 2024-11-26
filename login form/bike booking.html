@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Rental Booking</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-group input[type="date"],
+    .form-group input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .savebtn{
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .savebtn:hover{
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Bike Rental Booking</h2>
+    <form action="#" method="post" id="bookingForm">
+      <div class="form-group">
+        <label for="pickup_date">Pick-up Date</label>
+        <input type="date" id="pickup_date" name="pickup_date">
+      </div>
+      <div class="form-group">
+        <label for="return_date">Date to Return</label>
+        <input type="date" id="return_date" name="return_date">
+      </div>
+      <div class="form-group">
+        <label for="days_rent">Days to Rent</label>
+        <input type="number" id="days_rent" name="days_rent" min="0">
+      </div>
+      <div class="form-group">
+        <label for="daily_rate">Bike Daily Rate</label>
+        <input type="number" id="daily_rate" name="daily_rate" min="0">
+      </div>
+      <div class="form-group">
+        <label for="total_amount">Total Amount</label>
+        <input type="number" id="total_amount" name="total_amount" min="0" readonly>
+      </div>
+      <div class="form-group">
+        <button type="button" class="btn" onclick="calculateTotal()">Calculate Total</button>
+      </div>
+      <div class="form-group">
+        <a href="confirm.html" class="savebtn">Save</a> 
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function calculateTotal() {
+      var daysRent = parseInt(document.getElementById('days_rent').value);
+      var dailyRate = parseFloat(document.getElementById('daily_rate').value);
+      var totalAmount = daysRent * dailyRate;
+      document.getElementById('total_amount').value = totalAmount.toFixed(2);
+    }
+  </script>
+</body>
+</html>

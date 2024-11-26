@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- fevicon -->
+     <link rel="icon" type="image/x-icon" href="/bullet-removebg-preview.png">
+    <title>Document</title>
+  
+    <style>
+         *{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: whitesmoke;
+}
+/* navabar */
+.navabar{
+    background-color: #001f3e;
+}
+.navabarList{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    margin:0 auto;
+}
+ul .dropdown{
+    display:block;
+}
+img{
+    height: 65px;
+}
+.navabarList li p,a{
+    text-decoration: none;
+    padding:0 0 0 20px;
+    color:white;
+}
+.navabarList li i{
+    color:white;
+}
+.navabarList li input{
+    padding:5px;
+}
+/* dropdown */
+.nav-drop{
+    position:relative;
+    display:inline-block;
+}
+.nav-drop .dropdown{
+    position:absolute;
+    display:none;
+}
+.nav-drop:hover .dropdown{
+    display:block;
+    background-color: black;
+    line-height: 1.5;
+}
+.nav-drop .dropdown a:hover{
+    background-color: rgb(112, 111, 111);
+    /* padding-right: 5px; */
+    width:50px;
+    margin-right: 5px;
+}
+.home{
+    padding-left: 112px;
+}
+#searchicon {
+    color: black;
+    margin: -25px;
+    border: 2px solid black;
+    padding: 5px 0 5px 5px;
+}
+.login{
+    margin-left: 251px;
+}
+.login button{
+    background-color: #001f3e;
+    color:white;
+    padding:10px;
+    border:1px solid white;
+    border-radius:10px;
+}
+/* anurag css end */
+        section{
+            display: flex;
+            justify-content: space-between;
+            gap: 35px;
+            margin: 50px;       
+        }
+        section h1{
+               font-size: 43px;
+               margin: 0;
+         }
+        
+        section img {       border: 1px solid black ;
+                   height: 383px;
+                   width: 470px ;
+                   background: rgb(120, 154, 184);
+                 box-shadow: 12px 7px 9px #7d98a0;}
+        
+               section img :hover{
+                     box-shadow:    12px 7px 9px red  ;
+                   
+                                  
+                }
+                   
+        section button { height: 35px;
+                 margin-top: 32px;
+                 border-radius: 20px;
+                 
+               }
+        
+        section button:hover{ background-color: rgb(17, 205, 18);            
+        }
+        .nam{
+            margin-bottom: -16px;
+        }
+        
+        /* <!-- css start --> */
+
+/* cards */
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+}
+.card{
+    border:2px solid black;
+    padding:20px;
+    width:250px;
+    border-radius: 10px;
+    background-color: beige;
+    box-shadow: 2px 2px 5px black;
+    transition: 1s;
+    height: 425px;
+    position:relative;
+}
+#wheelchair img {
+    height: 100%;
+}
+#handicap img {
+    height: 100%;
+}
+#handicap {
+    height: 143px;
+}
+
+#wheelchair {
+    height: 144px;
+}
+.relatedBikes h2{
+    padding: 0 0 46px 42px;
+    font-size: 46px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px black;
+}
+.info-1 button{
+    padding: 8px 15px;
+}
+.card img{
+    height: 50%;
+    width: 250px;
+}
+.card h3{
+    text-align: center;
+    font-size: 30px;
+    margin:9px;
+}
+.card h5{
+    text-align: center;
+    font-size: 17px;
+    margin:8px;
+}
+.cardbtndiv{
+    text-align: center;
+    margin:30px 0 10px 0;
+}
+.cardbtn{
+    padding:10px;
+    background-color:teal;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 29px;
+    right: 97px;
+}
+.cardbtn:hover{
+    scale: 1.1;
+    background-color:rgb(88, 223, 223);
+    color:black;
+   
+}
+/* footer */
+.footer{
+    background-color: #212529;
+    text-align: center;
+    margin-top: 68px;
+    padding: 45px 0 30px 0;
+}
+.footer a{
+    color:#0d6efd;
+    padding:0;
+}
+.footer p{
+    color:white;
+}
+</style>
+
+<!-- ANURAG CSS END -->
+
+
+        </style>
+</head>
+<body>
+    <header>
+        <div class="navabar">
+            <ul class="navabarList">
+                <li>
+                    <img src="/bullet-removebg-preview.png" alt="logo" class="logo">
+                </li>
+                <li>
+                    <p>BikeShare : Bike Rental Service</p>
+                </li>
+                <li>
+                    <a href="/index.html" class="home">HOME</a>
+                </li>
+                <li class="nav-drop">
+                    <a href="#">CATEGORIES</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown">
+                        <a href="/index.html">All Categories</a>
+                        <a href="/Adventure bike/adventure 1(yezdi)/yezdi.html">Adventure Bike</a>
+                        <a href="/Sports bike/sports1 (kawasaki)/kawasaki-ninja.html">Sports Bike</a>
+                        <a href="/Scooter/Scooter 1(activa)/activa.html">Scooter</a>
+                        <a href="/Touring bike/touring1(bmw k 1600)/bmwk1600.html">Touring Bike</a>
+                    </div>
+                </li>
+                
+                <li class="nav-drop">
+                    <a href="#">BRAND</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown">
+                       <a href="#">Honda</a>
+                       <a href="#">Yamaha</a>
+                       <a href="#">KTM</a>
+                       <a href="#">Kavasaki</a>
+                       <a href="#">RoyalEnfield</a> 
+                    </div>
+                </li>
+                <li><a href="#">ABOUT</a>
+                </li>
+                <li>
+                <a href="#">
+                    <input type="text" placeholder="Search" id="search">
+                </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass" for="search" id="searchicon"></i>
+                </li>
+                <li class="login">
+                   <button>LOGIN</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- nav end -->
+    <!-- first card start -->
+    
+       <section class="sec-1">
+                
+                <img src="activa.png" alt="image not found"  >                    
+                <div class="info-1">
+                             <h1>HONDA ACTIVA 7G</h1>
+                             <hr>
+                             <p class="nam"> <small>Brand: ACTIVA</small> <br>                        
+                              <small>Regular</small> 
+                             </p> 
+                             <br>
+                            <b>₹ 1200<br>
+                              Available Unit :</b> <span>10</span> <br>
+                        
+                              <a href="/login form/bike booking.html">
+                                <button>Book this bike</button>
+                             </a>
+                              <p>The Activa 7G, a marvel on two wheels, glides through streets with ease,
+                                Effortlessly blending style, comfort, and efficiency to please.
+                                Its sleek design commands attention, a symbol of urban flair,
+                                With a reliable engine, it takes on the road with dare.</p>
+                              <p>
+                                Whether navigating through bustling city streets or cruising down tranquil highways, the Activa 7G delivers unparalleled performance and agility. Equipped with a fuel-efficient engine, it ensures a perfect balance between power and economy. The spacious under-seat storage provides ample room for all your essentials, adding practicality to its charm.  </p>      
+                </div>
+                 
+        </section>
+
+        <!-- first card end -->
+        <div class="relatedBikes">
+            <h2>Related Bikes.</h2>
+        </div>
+        
+
+
+  <!-- cards -->
+        
+  <div class="cards">
+
+            
+    <div class="card">
+        <div class="cardimg">
+            <img src="/Scooter/Scooter 2(simple one)/simpleone.png" alt="">
+        </div>
+        <div>
+            <h3>E-SCOOTER</h3>
+            <h5>Daily Rate: 500rs</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed labore perspiciatis fugiat earum </p>
+        </div>
+        <div class="cardbtndiv">
+            <a href="/Scooter/Scooter 2(simple one)/simpleone.html">
+                <button class="cardbtn">Show More</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="cardimg">
+            <img src="/Scooter/Scooter 5(lexmoto)/Lexmoto-XDV-300 (2).png" alt="">
+        </div>
+        <div>
+            <h3>LEXMOTOT-XDV</h3>
+            <h5>Daily Rate: 500rs</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed labore perspiciatis fugiat earum </p>
+        </div>
+        <div class="cardbtndiv">
+            <a href="/Scooter/Scooter 5(lexmoto)/Lexmoto.html">
+                <button class="cardbtn">Show More</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="cardimg" id="wheelchair">
+            <img src="/Scooter/Scooter3(delscooter)/delscooter.png" alt="">
+        </div>
+        <div>
+            <h3>EVTRIC DELIVERY</h3>
+            <h5>Daily Rate: 500rs</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed labore perspiciatis fugiat earum </p>
+        </div>
+        <div class="cardbtndiv">
+            <a href="/Scooter/Scooter3(delscooter)/delscooter.html">
+                <button class="cardbtn">Show More</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="cardimg" id="handicap">
+            <img src="/Scooter/Scooter4(wheelchair)/whellchair.png" alt="">
+        </div>
+        <div>
+            <h3>HANDICAP MOBILITY</h3>
+            <h5>Daily Rate: 500rs</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed labore perspiciatis fugiat earum </p>
+        </div>
+        <div class="cardbtndiv">
+            <a href="/Scooter/Scooter4(wheelchair)/wheelchair.html">
+                <button class="cardbtn">Show More</button>
+            </a>
+        </div>
+    </div>
+</div>
+ <!-- CARDS END -->
+ <footer>
+    <div class="footer">
+        <p>Copyright &copy; Bike Share 2024 <br> Developed By :<a href="https://www.linkedin.com/in/sumit-hiwarkar-25445728b/">Sumit Hiwarkar</a> &amp;
+            <a href="https://www.linkedin.com/in/anurag-baitule-936880270/overlay/background-image/">Anurag Baitule</a>
+        </p> 
+    </div>
+</footer>
+        
+</body>
+</html> 
